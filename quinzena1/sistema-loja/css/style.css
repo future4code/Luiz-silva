@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  color: var(--text);
+  background-color: var(--background);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--title);
+}
+
+p {
+  color: var(--text);
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--accent);
+}
+
+:root {
+  --background: #ffffff;
+  --primary-color: #f5f3f7;
+  --title: #3394d1;
+  --text: #2c2f33;
+  --accent: #65dcad;
+}
+
+.title1 {
+  margin: 0 auto;
+}
+.welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 108rem;
+  margin: 1rem;
+}
+
+.menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: var(--primary-color);
+  height: 10%;
+}
+
+#description-loja {
+  max-width: 1080px;
+  margin: 30px auto;
+  text-align: center;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  background: var(--primary-color);
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  min-height: 1%;
+  position: absolute;
+  bottom: 0;
+}
+
+.social-icon {
+  width: 50px;
+  margin-top: 1rem;
+}
+
+.page-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1080px;
+  margin: 0 auto;
+  height: 3rem;
+}
+
+#funcionarios-content {
+  max-width: 1080px;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+
+#funcionarios {
+  list-style: none;
+}
+
+#product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+}
+
+.form-input {
+  width: 250px;
+  margin-top: 0.8rem;
+}
+
+.form-input button {
+  width: 173px;
+  height: 40px;
+  outline: none;
+  color: var(--text);
+  background: var(--title);
+  border: none;
+  border-radius: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  text-align: center;
+  margin-bottom: 30px;
+}
+table td, table th {
+  border: 0.1rem solid var(--accent);
+}
+
+#table-products {
+  max-width: 1080px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px auto;
+}
+
+#table-products img {
+  height: 90px;
+  width: 90px;
+}
+
