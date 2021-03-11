@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background: #F2F2F2;
+  --text: black;
+  --title: #011C26;
+  --accent: #BF1111;
+  --button: #8C1F1F;
+}
+
+body {
+  font-family:'Courier New', Courier, monospace;
+  font-size: 1.6rem;
+  background: var(--background);
+  color: var(--background);
+}
+
+a {
+  text-decoration: none;
+  color: var(--title);
+}
+
+a:hover {
+  color: var(--button);
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  color: var(--title);
+}
+
+header {
+background: rgba( 242, 242, 242, 0.35 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 5.5px );
+-webkit-backdrop-filter: blur( 5.5px );
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+
+
+.menu ul, li {
+  display: flex;
+  padding-left: 40px;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.content-img {
+  background-image: url("../img/Endless-Constellation.svg");
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+}
+
+#sobre-text {
+  width: 450px;
+  height: 250px;
+}
+
+#sobre-img {
+  width: 350px;
+  height: 250px;
+  margin-left: 0;
+}
+#sobre-img img {
+  width: 100%;
+  height: 100%;
+}
+
+#social-media {
+  display: flex;
+  margin: 0 auto;
+  width: 450px;
+  height: 150px;
+}
+
+.social-icons img{
+  margin: 10px auto;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+
+#projetos {
+  width: 100%;
+  flex-wrap: wrap;
+  background-image: url("../img/Flat-Mountains.svg");
+  background-size: fill;
+  background-position: center center;
+}
+
+#projetos h1 {
+  color: var(--background);
+}
+
+.projetos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 280px;
+  background: rgba( 191, 17, 17, 0.40 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 0.0px );
+-webkit-backdrop-filter: blur( 0.0px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.projetos-thumb img{
+  width: 150px;
+  height: 150px;
+}
+
+#form {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 900px;
+  background: peachpuff;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+input{
+  flex-wrap: wrap;
+  width: 300px;
+  margin-left: 80px;
+  margin-bottom: 20px;
+  height: 30px;
+}
+
+textarea {
+  width: 700px;
+  resize: none;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+button {
+  height: 30px;
+  width: 70%;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  outline: none;
+  border:none;
+  background: var(--button);
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+  margin-top: 20px;
+  position: absolute;
+  background: rgba( 241, 13, 13, 0.10 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 5.5px );
+  -webkit-backdrop-filter: blur( 5.5px );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  background-image: url("../img/Endless-Constellation.svg");
+  background-size: cover;
+  background-position: center center;
+}
