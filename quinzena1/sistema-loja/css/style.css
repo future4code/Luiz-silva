@@ -1,3 +1,13 @@
+
+:root {
+  --background: #ffffff;
+  --primary-color: #f5f3f7;
+  --title: #3394d1;
+  --text: #2c2f33;
+  --accent: #65dcad;
+  --button: crimson;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -26,12 +36,15 @@ a:hover {
   color: var(--accent);
 }
 
-:root {
-  --background: #ffffff;
-  --primary-color: #f5f3f7;
-  --title: #3394d1;
-  --text: #2c2f33;
-  --accent: #65dcad;
+button {
+  background: var(--button);
+  height: 19px;
+  margin: 0px;
+  color: white;
+  outline: none;
+  border: black;
+  border-radius: 2px;
+  width: 150px;
 }
 
 .title1 {
@@ -141,5 +154,9 @@ table td, table th {
 #table-products img {
   height: 90px;
   width: 90px;
+}
+
+#search-sales {
+  margin-bottom: 35px;
 }
 
