@@ -1,0 +1,302 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&family=Roboto:wght@100&display=swap');
+
+body {
+  font-family:'Courier New', Courier, monospace;
+  font-size: 1rem;
+  font-family: 'Rajdhani', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+  letter-spacing: 3.5px;
+  font-weight: 900;
+}
+
+:root {
+--primary: #F2AC57;
+--accent: #F2884B;
+--color1: #F2CB9B;
+--color2: #F2AD94;
+--background: #f2f3f6;
+--title: #F94F41;
+--text: #AA3FF2;
+}
+
+#contact-title {
+  margin: 6rem;
+}
+ul {
+  list-style: none;
+}
+
+h1, h2, h3, h4 {
+  color: var(--title);
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  background: var(--accent);
+  border: none;
+  color: var(--background);
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+button:hover {
+  transition: filter 0.2s;
+  filter: brightness(0.9);
+}
+
+p {
+  color: var(--text);
+}
+
+/* header e menu */
+
+header {
+  background-image: url("img/bankheader.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 30rem;
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+  height: 60px;
+}
+
+
+nav a {
+  color: var(--primary);
+}
+
+nav a:hover {
+  color: var(--text);
+}
+
+
+nav img {
+  background-color: rgba(22, 182, 240, 94);
+  width: 5rem;
+  height: 3rem;
+  margin-top: 0.3rem;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+}
+
+#menu-mobile {
+  display: none;
+}
+
+li {
+  padding-left: 3rem;
+  margin-right: 2rem;
+}
+
+#header-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--title);
+  margin-top: 3.2rem;
+}
+
+#header-description button {
+  margin: 16px;
+  padding: 8px;
+  width: 200px;
+  border-radius: 8px;
+}
+
+/* main */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* serviços */
+.service-description-container {
+  margin: 0.32rem;
+  padding: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 50%;
+  height: 23rem;
+  background: #f2f3f6;
+}
+
+.color-services {
+  background: var(--background);
+}
+
+.card {
+  width: 100%;
+  margin-top: 3.2rem;
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1080px;
+  justify-content: center;
+  align-items: center;
+  margin: 3.2rem auto;
+}
+
+#download-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  width: 50rem; 
+}
+
+#download-div {
+  margin-bottom: 3rem;
+}
+
+.img-download {
+  width: 200px;
+}
+
+.img-description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+}
+
+.img-description img {
+  width: 400px;
+  height: 100%;
+}
+
+/* formulário*/
+
+#form-container {
+  max-width: 1080px;
+  height: 400px;
+  margin: 3.2rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+
+#form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+}
+
+#form input, textarea {
+  width: 300px;
+  height: 30px;
+  margin-bottom: 15px;
+}
+
+#form textarea {
+  resize: none;
+}
+
+#form button {
+  width: 300px;
+  border: none;
+  height: 20px;
+  border-radius: 3px;
+}
+
+/* newsLetter da página*/
+
+#news-letter {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#submit-letter {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  width: 300px;
+  flex-wrap: nowrap;
+  margin: 0 auto;
+}
+
+#news-letter button {
+  height: 40px;
+  width: 150px;
+}
+
+#news-letter input {
+  height: 40px;
+  padding-right: 0;
+  margin-right: 0;
+}
+
+/* footer da página*/
+footer {
+  display: flex;
+  height: 60px;
+  align-items: center;
+  justify-content: space-around;
+  background: var(--background);
+}
+
+footer h4 {
+  color: var(--title);
+  
+}
+
+/*menu responsivo*/
+
+@media (max-width: 991px) {
+  #menu-desktop {
+    display: none;
+  }
+  #menu-mobile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    max-width: 900px;
+  }
+  ul {
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 900px;
+  }
+  li {
+    margin: 0 auto;
+    padding: 3px;
+  }
+  nav a:hover {
+    color: var(--text);
+  }
+}
